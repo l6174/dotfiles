@@ -1,0 +1,150 @@
+## ░█▀▀░▀█▀░█▀█░█▀▄░█▀▀░█░█░▀█▀░█▀█
+## ░▀▀█░░█░░█▀█░█▀▄░▀▀█░█▀█░░█░░█▀▀
+## ░▀▀▀░░▀░░▀░▀░▀░▀░▀▀▀░▀░▀░▀▀▀░▀░░
+
+format = "$character$directory$all"
+right_format = """$git_branch$git_status$cmd_duration"""
+
+# Disable the blank line at the start of the prompt
+add_newline = false
+
+[line_break]
+disabled = true
+
+[character]
+format = "[](fg:#8aadf4 bg:none)[ $symbol ](fg:#494d64 bg:#8aadf4)[](fg:#8aadf4 bg:#494d64)"
+success_symbol = ""
+error_symbol = ""
+vicmd_symbol = " "
+
+[hostname]
+ssh_only = true
+format = "[$hostname](bold blue) "
+disabled = false
+
+[cmd_duration]
+min_time = 1
+format = "[](fg:#494d64 bg:none)[$duration]($style)[](fg:#494d64 bg:#494d64)[](fg:#8aadf4 bg:#494d64)[ ](fg:#494d64 bg:#8aadf4)[](fg:#8aadf4 bg:none) "
+disabled = false
+style = "fg:#91d7e3 bg:#494d64"
+
+[directory]
+format = "[](fg:#494d64 bg:#494d64)[$path ](fg:#8aadf4 bg:#494d64)[](fg:#494d64 bg:none) "
+style = "fg:#494d64 bg:#8aadf4"
+truncation_length = 3
+truncate_to_repo=false
+home_symbol = " ~"
+read_only = " "
+
+[git_branch]
+format = "[](fg:#494d64 bg:none)[$branch]($style)[](fg:#494d64 bg:#494d64)[](fg:#8aadf4 bg:#494d64)[](fg:#363a4f bg:#8aadf4)[](fg:#8aadf4 bg:none) "
+style = "fg:#91d7e3 bg:#494d64"
+symbol = " "
+
+[git_status]
+format="[](fg:#494d64 bg:none)[$all_status$ahead_behind]($style)[](fg:#494d64 bg:#494d64)[](fg:#8aadf4 bg:#494d64)[ ](fg:#494d64 bg:#8aadf4)[](fg:#8aadf4 bg:none) "
+style = "fg:#91d7e3 bg:#494d64"
+conflicted = "="
+ahead =	"⇡${count}"
+behind = "⇣${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+up_to_date = ""
+untracked = "?${count}"
+stashed = ""
+modified = "!${count}"
+staged = "+${count}"
+renamed = "»${count}"
+deleted = "${count}"
+
+[git_commit]
+format = "[\\($hash\\)]($style) [\\($tag\\)]($style)"
+style = "green"
+
+[git_state]
+rebase = "REBASING"
+merge =	"MERGING"
+revert = "REVERTING"
+cherry_pick = "CHERRY-PICKING"
+bisect = "BISECTING"
+am = "AM"
+am_or_rebase = "AM/REBASE"
+style =	"yellow"
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+
+[aws]
+symbol = "  "
+
+[buf]
+symbol = " "
+
+[c]
+symbol = " "
+
+[conda]
+symbol = " "
+
+[dart]
+symbol = " "
+
+[docker_context]
+symbol = " "
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[golang]
+symbol = " "
+
+[haskell]
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[lua]
+symbol = " "
+
+[memory_usage]
+symbol = " "
+
+[meson]
+symbol = "喝 "
+
+[nim]
+symbol = " "
+
+[nix_shell]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[package]
+symbol = " "
+
+[python]
+symbol = " "
+
+[rlang]
+symbol = "ﳒ "
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = " "
+
+[scala]
+symbol = " "
+
+[spack]
+symbol = "🅢 "
