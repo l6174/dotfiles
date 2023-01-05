@@ -8,6 +8,8 @@
 ![](https://github.com/l6174/dotfiles/blob/main/Pictures/Screenshots/sc_browser.png)
 ![](https://github.com/l6174/dotfiles/blob/main/Pictures/Screenshots/sc_spotify.png)
 
+### Note: This setup is based on [Axarva's Dotfiles](https://github.com/axarva/dotfiles-2.0).
+
 # Contents:
 ### Wallpaper: [Bridge](https://raw.githubusercontent.com/catppuccin/wallpapers/main/landscapes/Bridge.jpg)
 ### Fetch Tool: [Fetch It](https://github.com/Ruturajn/fetchit)
