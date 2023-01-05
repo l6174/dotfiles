@@ -3,6 +3,7 @@ fish_add_path --path $HOME/bin
 starship init fish | source
 zoxide init --cmd cd fish | source
 set -x BAT_THEME Catppuccin-macchiato
+set -x EDITOR nano
 if status is-interactive
     # Commands to run in interactive sessions can go here
     # neofetch --ascii radioactive.txt --ascii_colors 2 1
