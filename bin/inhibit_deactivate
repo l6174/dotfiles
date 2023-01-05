@@ -1,0 +1,8 @@
+#!/bin/bash
+if [ -z "$(pgrep xautolock)" ]
+then
+	~/bin/lock.sh &
+	dunstify -u low -r 5499 -i /home/llawliet/.local/share/icons/fontawesome/eye-x.svg "Inhibitor" "Deactivated"
+else
+	notify-send "Inhibitor Was Not Active"
+fi
