@@ -31,7 +31,8 @@ paru -S picom-jonaburg-git\
 	maim              \
 	rofi-greenclip    \
 	xautolock         \
-	betterlockscreen
+	betterlockscreen  \
+        lightly-qt
 
 
 # Quick Fix for tint2
@@ -43,6 +44,14 @@ fi
 # Change TTY Theme
 TTY/build.sh
 TTY/install.sh macchiato
+
+
+# Add Cursors
+sudo cp -r .local/share/icons/Catppuccin-Macchiato-Green-Cursors /usr/share/icons/
+
+
+# Add GTK Theme
+sudo cp -r .themes/Catppuccin-Macchiato-Standard-Green-Dark /usr/share/themes/
 
 
 # Change Shell
