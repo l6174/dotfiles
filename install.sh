@@ -98,7 +98,9 @@ sleep 3
 
 # Copy dotfiles
 echo "Copying dotfiles..."
-cp -r ~/dotfiles/.* ~
+cp -r ~/dotfiles/.xinitrc ~
+cp -r ~/dotfiles/.Xresources ~
+cp -r ~/dotfiles/.gtkrc-2.0 ~
 echo "Done!"
 sleep 3
 
@@ -162,7 +164,7 @@ sleep 3
 
 # Change Shell
 echo "Changing Shell..."
-sudo chsh -s /usr/bin/fish
+chsh -s /usr/bin/fish
 echo "Done!"
 sleep 3
 
