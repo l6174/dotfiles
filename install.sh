@@ -25,7 +25,7 @@ sudo pacman --noconfirm -Syu
 # Change 'xf86-video-intel' accordingly
 # Remove the things which are bloat to you like chromium, zathura, etc.
 echo "Installing Packages..."
-sudo pacman -S --noconfirm --needed base-devel wget git xf86-video-intel rofi feh xorg xorg-xinit xorg-xinput xmonad fish alsa-utils cava lxappearance qt5ct polkit thunar zoxide exa zathura chromium papirus-icon-theme kitty
+sudo pacman -S --noconfirm --needed base-devel wget git xf86-video-intel rofi feh xorg xorg-xinit xorg-xinput xmonad fish alsa-utils cava lxappearance qt5ct polkit thunar zoxide exa zathura chromium papirus-icon-theme kitty nitrogen
 
 
 # AUR Dependencies
@@ -68,6 +68,8 @@ echo "Installing GTK Theme..."
 sudo cp -r ~/.themes/Catppuccin-Macchiato-Standard-Green-Dark /usr/share/themes/
 
 
+# Set Wallpaper
+nitrogen --set-auto ~/Wallpapers/Bridge.jpg
 # Change Shell
 echo "Changing Shell..."
 chsh -s /usr/bin/fish
