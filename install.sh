@@ -1,12 +1,19 @@
+# Initialization
+echo "Starting dotfiles installation. Sit back and relax. :P"
+sleep 3
+
+
 # Copy content to it's place
 cp -r ./* ~/.
+cd ~
 
 
 # Install Paru
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
-cd ..
+cd ~
+
 
 # Update
 sudo pacman --noconfirm -Syu
@@ -56,3 +63,8 @@ sudo cp -r .themes/Catppuccin-Macchiato-Standard-Green-Dark /usr/share/themes/
 
 # Change Shell
 chsh -s /usr/bin/fish
+
+
+echo "Installation Complete! Rebooting in 5 seconds."
+sleep 5
+reboot
