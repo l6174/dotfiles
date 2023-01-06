@@ -25,6 +25,8 @@
 # Installation
 After a base arch installation execute these commands:
 ```
+$ cd ~
+
 $ git clone https://github.com/l6174/dotfiles.git
 
 $ cd dotfiles
