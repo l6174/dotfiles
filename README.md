@@ -3,12 +3,15 @@
     <h3></h3>
 </div>
 
-# Screenshots:
+# Gallery:
 ![](https://github.com/l6174/dotfiles/blob/main/Pictures/Screenshots/sc_main.png)
 ![](https://github.com/l6174/dotfiles/blob/main/Pictures/Screenshots/sc_browser.png)
 ![](https://github.com/l6174/dotfiles/blob/main/Pictures/Screenshots/sc_spotify.png)
 
-### Note: This setup is based on [Axarva's Dotfiles](https://github.com/axarva/dotfiles-2.0).
+# Notes:
+### This setup is based on [Axarva's Dotfiles](https://github.com/axarva/dotfiles-2.0).
+### This setup is not suitable for resolutions other then 1366x768.
+### Use this at your own risk because it is configured according to my preferences.
 
 # Contents:
 ### Wallpaper: [Bridge](https://raw.githubusercontent.com/catppuccin/wallpapers/main/landscapes/Bridge.jpg)
@@ -18,3 +21,13 @@
 ### Prompt: [Starship](https://starship.rs/)
 ### Terminal: [Kitty](https://sw.kovidgoyal.net/kitty/)
 ### Color Scheme: [Catppuccin](https://github.com/catppuccin/catppuccin)
+
+# Installation:
+### After a base arch installation execute these commands:
+```
+$ git clone https://github.com/l6174/dotfiles.git
+
+$ cd dotfiles
+
+$ sh install.sh
+```
