@@ -3,14 +3,6 @@ echo "Starting dotfiles installation. Sit back and relax. :P"
 sleep 3
 
 
-# Copy content to it's place
-echo "Copying files to their place..."
-cp -r ./* ~
-cd ~
-echo "Done!"
-sleep 3
-
-
 # Install Paru
 echo "Installing Paru..."
 git clone https://aur.archlinux.org/paru.git
@@ -28,15 +20,15 @@ echo "Done!"
 sleep 3
 
 
-# Change 'xf86-video-intel' accordingly
-echo "Installing Packages..."
-sudo pacman -S --no-confirm --needed base-devel wget git xf86-video-intel rofi feh xorg xorg-xinit xorg-xinput xmonad
+# Installing building essentials
+echo "Installing Build Essentials..."
+sudo pacman -S --noconfirm --needed base-devel wget git
 echo "Done!"
 sleep 3
 
 
-# Extra Packages
-echo "Installing More Packages..."
+# Installing Packages
+echo "Installing Packages..."
 paru -S --needed picom-jonaburg-git\
 	acpi              \
 	wmctrl            \
@@ -64,7 +56,15 @@ paru -S --needed picom-jonaburg-git\
 	papirus-icon-theme\
 	kitty             \
 	nitrogen          \
-	fetchit-git
+	fetchit-git       \
+	bat               \
+	rofi              \
+	feh               \
+	xorg              \
+	xorg-xinit        \
+	xorg-xinput       \
+	xf86-video-intel  \
+	xmonad
 echo "Done!"
 sleep 3
 
@@ -74,6 +74,66 @@ echo "Applying a quick fix for tint2.."
 if ! [ -f /usr/lib/libasan.so.6 ]; then
     sudo ln -s /usr/lib/libasan.so.8 /usr/lib/libasan.so.6 
 fi
+echo "Done!"
+sleep 3
+
+
+# Copy Configs
+echo "Copying Configs..."
+mkdir -p ~/.config
+cp -r ~/dotfiles/.config/* ~/.config
+echo "Done!"
+sleep 3
+
+
+# Copy Fonts and Icons
+echo "Copying Fonts and Icons..."
+mkdir -p ~/.local/share/fonts
+mkdir -p ~/.local/share/icons
+cp -r ~/dotfiles/.local/share/fonts/* ~/.local/share/fonts
+cp -r ~/dotfiles/.local/share/icons/* ~/.local/share/icons
+echo "Done!"
+sleep 3
+
+
+# Copy dotfiles
+echo "Copying dotfiles..."
+cp -r ~/dotfiles/.* ~
+echo "Done!"
+sleep 3
+
+
+# Copy Themes Directory
+echo "Copying Themes..."
+cp -r ~/dotfiles/.themes ~
+echo "Done!"
+sleep 3
+
+
+# Copy Xmonad Config
+echo "Copying XMonad Config..."
+cp -r ~/dotfiles/.xmonad ~
+echo "Done!"
+sleep 3
+
+
+# Copy bin Directory
+echo "Copying Binaries..."
+cp -r ~/dotfiles/bin ~
+echo "Done!"
+sleep 3
+
+
+# Copy TTY Directory
+echo "Copying TTY Theme..."
+cp -r ~/dotfiles/TTY ~
+echo "Done!"
+sleep 3
+
+
+# Copy Wallpapers Directory
+echo "Copying Wallpapers..."
+cp -r ~/dotfiles/Wallpapers ~
 echo "Done!"
 sleep 3
 
@@ -100,27 +160,17 @@ echo "Done!"
 sleep 3
 
 
-# Set Wallpaper
-echo "Setting Wallpaper..."
-nitrogen --set-auto ~/Wallpapers/Bridge.jpg
-echo "Done!"
-sleep 3
-
-# Set Lockscreen Wallpaper
-echo "Setting Lockscreen Wallpaper..."
-betterlockscreen -u ~/Wallpapers/cat_Japanese_Neon.png --fx blur
-echo "Done!"
-sleep 3
-
-
 # Change Shell
 echo "Changing Shell..."
-chsh -s /usr/bin/fish
+sudo chsh -s /usr/bin/fish
 echo "Done!"
 sleep 3
 
 
 # Finalizing
-echo "Installation Complete! Rebooting in 5 seconds..."
+echo "Set your wallpaper by executing <nitrogen ~/Wallpapers>" >> ~/Note.txt
+echo "Open an issue if you face any problem" >> ~/Note.txt
+echo "Enjoy!" >> ~/Note.txt
+echo "Installation Complete! Make sure to read ~/Note.txt after booting. Rebooting in 5 seconds..."
 sleep 5
 reboot
