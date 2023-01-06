@@ -3,17 +3,17 @@
     <h3></h3>
 </div>
 
-# Gallery:
+# Gallery
 ![](https://github.com/l6174/dotfiles/blob/main/Pictures/Screenshots/sc_main.png)
 ![](https://github.com/l6174/dotfiles/blob/main/Pictures/Screenshots/sc_browser.png)
 ![](https://github.com/l6174/dotfiles/blob/main/Pictures/Screenshots/sc_spotify.png)
 
-# Notes:
+# Notes
 - This setup is based on [Axarva's Dotfiles](https://github.com/axarva/dotfiles-2.0).
 - It is not suitable for resolutions other then 1366x768.
 - Use this at your own risk because it is configured according to my preferences.
 
-# Contents:
+# Contents
 - Wallpaper: [Bridge](https://raw.githubusercontent.com/catppuccin/wallpapers/main/landscapes/Bridge.jpg)
 - Fetch Tool: [Fetch It](https://github.com/Ruturajn/fetchit)
 - New Tab Page: [Bento-Next](https://github.com/l6174/startpage)
@@ -22,7 +22,7 @@
 - Terminal: [Kitty](https://sw.kovidgoyal.net/kitty/)
 - Color Scheme: [Catppuccin](https://github.com/catppuccin/catppuccin)
 
-# Installation:
+# Installation
 After a base arch installation execute these commands:
 ```
 $ git clone https://github.com/l6174/dotfiles.git
@@ -32,7 +32,7 @@ $ cd dotfiles
 $ sh install.sh
 ```
 
-# Keybinds:
+# Keybinds
 These are the basic keybinds. Read through the `.xmonad/xmonad.hs` file for more keybinds like increasing gaps and restoring gaps.
 
 |        Keybind         |                 Function                 |
