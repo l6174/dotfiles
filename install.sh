@@ -49,21 +49,22 @@ paru -S --needed picom-jonaburg-git\
 	rofi-greenclip    \
 	xautolock         \
 	betterlockscreen  \
-        lightly-qt        \
-        fish              \
-        alsa-utils        \
-        cava              \
-        lxappearance      \
-        qt5ct             \
-        polkit            \
-        thunar            \
-        zoxide            \
-        exa               \
-        zathura           \
-        chromium          \
-        papirus-icon-theme\
-        kitty             \
-        nitrogen
+	lightly-qt        \
+	fish              \
+	alsa-utils        \
+	cava              \
+	lxappearance      \
+	qt5ct             \
+	polkit            \
+	thunar            \
+	zoxide            \
+	exa               \
+	zathura           \
+	chromium          \
+	papirus-icon-theme\
+	kitty             \
+	nitrogen          \
+	fetchit-git
 echo "Done!"
 sleep 3
 
