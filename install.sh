@@ -80,18 +80,16 @@ sleep 3
 
 # Copy Configs
 echo "Copying Configs..."
-mkdir -p ~/.config
-cp -r ~/dotfiles/.config/* ~/.config
+cp -r ~/dotfiles/.config ~
 echo "Done!"
 sleep 3
 
 
 # Copy Fonts and Icons
 echo "Copying Fonts and Icons..."
-mkdir -p ~/.local/share/fonts
-mkdir -p ~/.local/share/icons
-cp -r ~/dotfiles/.local/share/fonts/* ~/.local/share/fonts
-cp -r ~/dotfiles/.local/share/icons/* ~/.local/share/icons
+mkdir -p ~/.local/share
+cp -r ~/dotfiles/.local/share/fonts ~/.local/share
+cp -r ~/dotfiles/.local/share/icons ~/.local/share
 echo "Done!"
 sleep 3
 
@@ -139,6 +137,12 @@ cp -r ~/dotfiles/Wallpapers ~
 echo "Done!"
 sleep 3
 
+# Copy ASCII
+echo "Copying ASCII"
+cp -r ~/dotfiles/.l ~
+echo "Done!"
+sleep 3
+
 
 # Change TTY Theme
 echo "Changing TTY Theme..."
@@ -169,8 +173,16 @@ echo "Done!"
 sleep 3
 
 
+# Recompile XMonad
+echo "Recompiling XMonad..."
+xmonad --recompile
+echo "Done!"
+sleep 3
+
+
 # Finalizing
 echo "Set your wallpaper by executing <nitrogen ~/Wallpapers>" >> ~/Note.txt
+echo "Make sure to edit your crontab by executing <crontab -e>" >> ~/Note.txt
 echo "Open an issue if you face any problem" >> ~/Note.txt
 echo "Enjoy!" >> ~/Note.txt
 echo "Installation Complete! Make sure to read ~/Note.txt after booting. Rebooting in 5 seconds..."
