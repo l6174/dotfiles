@@ -72,7 +72,9 @@ paru -S --needed picom-jonaburg-git\
 	xorg-xinit        \
 	xorg-xinput       \
 	xf86-video-intel  \
-	xmonad
+	xmonad            \
+	light             \
+	starship
 echo "Done!"
 sleep 3
 
