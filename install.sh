@@ -19,6 +19,7 @@ git clone https://github.com/k-vernooy/dunst.git --branch progress-styling ~/dun
 cd ~/dunst
 make && sudo make install
 echo "Done!"
+cd ~
 sleep 3
 
 
@@ -38,7 +39,7 @@ sleep 3
 
 # Installing Packages
 echo "Installing Packages..."
-paru -S --needed picom-jonaburg-git\
+paru -S --noconfirm --needed picom-jonaburg-git\
 	acpi              \
 	wmctrl            \
 	playerctl         \
