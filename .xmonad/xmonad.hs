@@ -102,6 +102,8 @@ inhibit = spawn "exec ~/bin/inhibit_activate"
 dehibit = spawn "exec ~/bin/inhibit_deactivate"
 update = spawn "exec ~/bin/changevolume up"
 decade = spawn "exec ~/bin/changevolume down"
+blupdate = spawn "exec ~/bin/changebl up"
+bldecade = spawn "exec ~/bin/changebl down"
 mute_toggle = spawn "exec ~/bin/changevolume mute"
 
 myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
@@ -130,8 +132,8 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((0,                    xF86XK_AudioMute), mute_toggle)
 
     -- Brightness keys
-    , ((0,                    xF86XK_MonBrightnessUp), spawn "brightnessctl s +10%")
-    , ((0,                    xF86XK_MonBrightnessDown), spawn "brightnessctl s 10-%")
+    , ((0,                    xF86XK_MonBrightnessUp), blupdate)
+    , ((0,                    xF86XK_MonBrightnessDown), bldecade)
  
     -- Screenshot
     , ((0,                    xK_Print), maimcopy)
