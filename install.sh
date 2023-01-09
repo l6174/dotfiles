@@ -13,6 +13,15 @@ echo "Done!"
 sleep 3
 
 
+# Install dunst fork
+echo "Installing Dunst..."
+git clone https://github.com/k-vernooy/dunst.git --branch progress-styling ~
+cd ~/dunst
+make && sudo make install
+echo "Done!"
+sleep 3
+
+
 # Update
 echo "System Update..."
 sudo pacman --noconfirm -Syu
@@ -33,7 +42,6 @@ paru -S --needed picom-jonaburg-git\
 	acpi              \
 	wmctrl            \
 	playerctl         \
-	dunst             \
 	xmonad-contrib    \
 	jq                \
 	xclip             \
