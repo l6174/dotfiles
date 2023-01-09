@@ -15,7 +15,7 @@ sleep 3
 
 # Install dunst fork
 echo "Installing Dunst..."
-git clone https://github.com/k-vernooy/dunst.git --branch progress-styling ~
+git clone https://github.com/k-vernooy/dunst.git --branch progress-styling ~/dunst
 cd ~/dunst
 make && sudo make install
 echo "Done!"
