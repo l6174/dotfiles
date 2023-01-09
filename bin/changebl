@@ -1,0 +1,16 @@
+icon=/home/llawliet/.local/share/icons/fontawesome/brightness.svg
+
+function send_notification() {
+	dunstify -a "changebl" -u low -r "2993" -h int:value:"$(light | cut -d '.' -f1)" -i $icon "Brightness: $(light | cut -d '.' -f1)%"
+}
+
+case $1 in
+up)
+	brightnessctl s +10%
+	send_notification
+	;;
+down)
+	brightnessctl s 10-%
+	send_notification
+	;;
+esac
