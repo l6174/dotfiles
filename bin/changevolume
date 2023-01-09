@@ -1,8 +1,8 @@
 #!/bin/bash
-bt=$(pamixer --get-default-sink | awk 'NR==2{print $1}')
-if [ $bt = 48 ]
+bt=$(pamixer --get-default-sink | awk 'NR==2{print $5}')
+if [ "$bt" = "Analog" ];
 then
-	icon="/home/llawliet/.local/share/icons/fontawesome/volume-high.svg"
+        icon="/home/llawliet/.local/share/icons/fontawesome/volume-high.svg"
 else
 	icon="/home/llawliet/.local/share/icons/fontawesome/bt.svg"
 fi
