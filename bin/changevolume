@@ -4,7 +4,7 @@ if [ "$bt" = "Analog" ];
 then
         icon="/home/llawliet/.local/share/icons/fontawesome/volume-high.svg"
 else
-	icon="/home/llawliet/.local/share/icons/fontawesome/bt.svg"
+	icon="/home/llawliet/.local/share/icons/fontawesome/headphones.svg"
 fi
 function send_notification() {
 	volume=$(pamixer --get-volume)
