@@ -3,6 +3,14 @@
     <h3></h3>
 </div>
 
+## Table of Contents
+- [Gallery](#gallery)
+- [Notes](#notes)
+- [Contents](#contents)
+- [Dependencies](#dependencies)
+- [Installation](#installation)
+- [Keybinds](#keybinds)
+
 # Gallery
 ![](https://github.com/l6174/dotfiles/blob/main/Pictures/Screenshots/sc_main.png)
 ![](https://github.com/l6174/dotfiles/blob/main/Pictures/Screenshots/sc_browser.png)
@@ -22,7 +30,7 @@
 - Terminal: [Kitty](https://sw.kovidgoyal.net/kitty/)
 - Color Scheme: [Catppuccin](https://github.com/catppuccin/catppuccin)
 
-# Required Dependencies
+# Dependencies
 These dependencies are included in the install script (for Arch only). You are free to remove packages which you don't need from install script as long as it doesn't appear in this dependency list.
 - ACPI (For battery related stuff.)
 - WmCtrl (IDK about this lol.)
