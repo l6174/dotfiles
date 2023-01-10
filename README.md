@@ -25,7 +25,7 @@
 # Required Dependencies
 These dependencies are included in the install script (for Arch only). You are free to remove packages which you don't need from install script as long as it doesn't appear in this dependency list.
 - ACPI (For battery related stuff.)
-- wmctrl (IDK about this lol.)
+- WmCtrl (IDK about this lol.)
 - Playerctl (For player widget to work.)
 - XClip and maim (For screenshot stuff.)
 - Rofi (Appmenu)
