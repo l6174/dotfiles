@@ -358,6 +358,7 @@ myStartupHook = do
   spawnOnce "syncthing --no-browser"
   spawnOnce "playerctld daemon"
   spawnOnce "lxpolkit &"
+  spawnOnce "setxkbmap -option "caps:escape_shifted_capslock""
 ------------------------------------------------------------------------
 -- Now run xmonad with all the defaults we set up.
 
