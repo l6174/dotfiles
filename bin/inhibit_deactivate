@@ -2,7 +2,7 @@
 if [ -z "$(pgrep xautolock)" ]
 then
 	~/bin/lock.sh &
-	dunstify -u low -r 5499 -i /home/llawliet/.local/share/icons/fontawesome/eye-x.svg "Inhibitor" "Deactivated"
+	dunstify -u low -r 5499 -i /home/llawliet/.local/share/icons/mdi/eye-off.png "Inhibitor" "Deactivated"
 else
 	notify-send "Inhibitor Was Not Active"
 fi

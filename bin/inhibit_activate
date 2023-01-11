@@ -2,5 +2,5 @@
 running=$(ps h -C xautolock | grep -wv $$ | wc -l);
 [[ $running < 1 ]] && notify-send "Inhibitor Already Active"&& exit;
 
-dunstify -u low -r 5499 -i /home/llawliet/.local/share/icons/fontawesome/eye.svg "Inhibitor" "Activated"
+dunstify -u low -r 5499 -i /home/llawliet/.local/share/icons/mdi/eye.png "Inhibitor" "Activated"
 pkill xautolock && xset s 0@enabled
