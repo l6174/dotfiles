@@ -1,7 +1,7 @@
 icon=/home/llawliet/.local/share/icons/mdi/brightness.png
 
 function send_notification() {
-	dunstify -a "changebl" -u low -r "2993" -h int:value:"$(light | cut -d '.' -f1)" -i $icon "Brightness: $(light | cut -d '.' -f1)%" -h string:x-dunst-stack-tag:brightness
+	dunstify -a "changebl" -u low -r "2993" -h int:value:"$(light | cut -d '.' -f1)" -i $icon "Brightness: $(light | cut -d '.' -f1)%" -h string:x-dunst-stack-tag:brightness -t 2000
 }
 
 case $1 in
