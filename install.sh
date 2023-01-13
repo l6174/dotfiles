@@ -75,7 +75,8 @@ paru -S --noconfirm --needed picom-jonaburg-git\
 	xf86-video-intel  \
 	xmonad            \
 	light             \
-	starship
+	starship          \
+	rofi-emoji
 echo "Done!"
 sleep 3
 

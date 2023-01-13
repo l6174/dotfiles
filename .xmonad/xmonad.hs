@@ -199,6 +199,9 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     -- Swap the focused window with the previous window
     , ((modm .|. shiftMask, xK_k     ), windows W.swapUp    )
 
+    -- Show emoji menu
+    , ((modm,               xK_slash    ), spawn "rofi -show emoji -modi emoji -theme ~/.config/rofi/config/launcher.rasi")
+
     -- Shrink the master area
     , ((modm,               xK_h     ), sendMessage Shrink)
 
@@ -358,7 +361,6 @@ myStartupHook = do
   spawnOnce "syncthing --no-browser"
   spawnOnce "playerctld daemon"
   spawnOnce "lxpolkit &"
-  spawnOnce "setxkbmap -option "caps:escape_shifted_capslock""
 ------------------------------------------------------------------------
 -- Now run xmonad with all the defaults we set up.
 
