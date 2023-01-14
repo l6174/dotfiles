@@ -110,7 +110,7 @@
     ],
     "updateDate": 1671658867139,
     "_id": "6e912b59-0604-43a9-9dcf-3cbd69f40977",
-    "_rev": 1671658867139,
+    "_rev": 1673691016519,
     "id": 8,
     "preferScheme": "dark"
   },
@@ -128,7 +128,7 @@
     ],
     "updateDate": 1671659619815,
     "_id": "16a38e3f-f00a-49ce-88a2-d0df8458bc99",
-    "_rev": 1671659619815,
+    "_rev": 1673691016519,
     "id": 10
   },
   {
@@ -145,7 +145,7 @@
     ],
     "updateDate": 1671658843778,
     "_id": "8fb80fa9-8eba-4df9-8237-930b9cc61f7e",
-    "_rev": 1671658843778,
+    "_rev": 1673691016519,
     "id": 11
   },
   {
@@ -274,7 +274,7 @@
           "type": "text",
           "label": "Scrollbar width",
           "name": "scrollbar_width",
-          "value": null,
+          "value": "0px",
           "default": "6px",
           "options": null
         },
@@ -357,7 +357,7 @@
     "name": "YouTube Catppuccin-Macchiato",
     "originalDigest": "345c41868bfa1eeafb825ac8a083941b8f2f329b",
     "_id": "863a8525-cef7-4ca7-823f-84977433b081",
-    "_rev": 1671566058869,
+    "_rev": 1673692847088,
     "id": 15,
     "etag": "W/\"c26a93bdac86d5f02ee9341c0d80f1372f407a801f2263b83f3c10fa756f4120\""
   },
@@ -440,7 +440,7 @@
     "name": "Github Catppuccin",
     "originalDigest": "00c368af6253455836b9e60e50c6711cbb65f10f",
     "_id": "87da9def-f5a1-4335-9ccd-84eae65b16c0",
-    "_rev": 1671567694117,
+    "_rev": 1673691017027,
     "id": 16,
     "etag": "W/\"022978b3b927d8ea596f35b0d6882f794440d34c236e317fc6e337e3eadd4148\""
   },
@@ -470,7 +470,7 @@
     "name": "Catppuccin Theme for Google",
     "originalDigest": "cf760f5fd06ae73e23d15af3b5e34a75a4038723",
     "_id": "af4f0293-83b2-4a3e-96af-3f3f68ce9702",
-    "_rev": 1671617691700,
+    "_rev": 1673691017148,
     "id": 17,
     "etag": "W/\"4e921856cc154e4d55df1049b17d4e466fa87606f90a9cc50c55471d9cc2331f\""
   },
@@ -500,7 +500,7 @@
     "preferScheme": "dark",
     "originalDigest": "c2621092d517297524f3e3b7c510482e87c4bb65",
     "_id": "8e618926-e393-45c4-9dc2-43b93a0fc103",
-    "_rev": 1671815933055,
+    "_rev": 1673691017151,
     "installationUrl": "https://userstyles.world/style/7170",
     "id": 19
   },
@@ -560,7 +560,7 @@
     "preferScheme": "dark",
     "originalDigest": "47d27b86ee6328d2798899963826883f6d853445",
     "_id": "6846fa94-a6ab-4557-8031-be0ea64e0a7e",
-    "_rev": 1672620389578,
+    "_rev": 1673691017156,
     "id": 20,
     "etag": "W/\"6fcdd8ef36d792b179836f07d296a7a66d97ad51f1d7e9574a27928e3dbab22a\"",
     "updateDate": 1672157254422
@@ -585,7 +585,7 @@
     ],
     "updateDate": 1671816061309,
     "_id": "b46abfb4-8c45-4c72-ac5e-16286fc607e3",
-    "_rev": 1671816061309,
+    "_rev": 1673691017210,
     "id": 21
   },
   {
@@ -605,7 +605,7 @@
     ],
     "updateDate": 1671795450126,
     "_id": "ca40be56-aa57-4d9a-bbcd-c5d74d3b978c",
-    "_rev": 1671795779468,
+    "_rev": 1673691017210,
     "id": 22
   },
   {
@@ -837,8 +837,108 @@
     "preferScheme": "dark",
     "originalDigest": "cd58a058907b29bd6035a0d2f720ac9b03171156",
     "_id": "72acfe9f-c6d9-4a47-bb5a-c5f9c82bc1c3",
-    "_rev": 1672330215749,
+    "_rev": 1673691017210,
     "id": 23,
     "etag": "W/\"746bfd83de5e3281c9099e324dd597a8a6a0cf51f08bd9a68d8dad8856da5ffe\""
+  },
+  {
+    "enabled": true,
+    "updateUrl": "https://github.com/catppuccin/searxng/raw/main/catppuccin.user.css",
+    "url": "https://github.com/catppuccin/searxng",
+    "installDate": 1673539630411,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           SearXNG Catppuccin\n@namespace      github.com/catppuccin/searxng\n@homepageURL    https://github.com/catppuccin/searxng\n@version        0.2.0\n@description    Soothing pastel theme for SearXNG\n@author         Catppuccin\n@updateURL      https://github.com/catppuccin/searxng/raw/main/catppuccin.user.css\n@preprocessor   stylus\n@var select lighttheme \"Light Variant\" [\"Latte*\", \"Frappe\", \"Macchiato\", \"Mocha\"]\n@var select darktheme \"Dark Variant\" [\"Latte\", \"Frappe\", \"Macchiato\", \"Mocha*\"]\n@var checkbox additions \"Additional Tweaks\" 0\n==/UserStyle== */\n@-moz-document url-prefix(\"http://ransack.i2p/\"),\nurl-prefix(\"https://darmarit.org/searx/\"),\nurl-prefix(\"https://de.xcxc.ml/\"),\nurl-prefix(\"https://dynabyte.ca/\"),\nurl-prefix(\"https://etsi.me/\"),\nurl-prefix(\"https://icanfindit.online/\"),\nurl-prefix(\"https://jackgoss.xyz/\"),\nurl-prefix(\"https://jsearch.pw/\"),\nurl-prefix(\"https://metasearch.nl/\"),\nurl-prefix(\"https://northboot.xyz/\"),\nurl-prefix(\"https://notsearch.uk/\"),\nurl-prefix(\"https://opnxng.com/\"),\nurl-prefix(\"https://paulgo.io/\"),\nurl-prefix(\"https://priv.au/\"),\nurl-prefix(\"https://privatus.live/\"),\nurl-prefix(\"https://s.frlt.one/\"),\nurl-prefix(\"https://s.zhaocloud.net/\"),\nurl-prefix(\"https://saber.tk/\"),\nurl-prefix(\"https://search.0relay.com/\"),\nurl-prefix(\"https://search.affusio.com/\"),\nurl-prefix(\"https://search.bus-hit.me/\"),\nurl-prefix(\"https://search.chemicals-in-the-water.eu/\"),\nurl-prefix(\"https://search.cronobox.one/\"),\nurl-prefix(\"https://search.disroot.org/\"),\nurl-prefix(\"https://search.ethibox.fr/\"),\nurl-prefix(\"https://search.gcomm.ch/\"),\nurl-prefix(\"https://search.kiwitalk.de/\"),\nurl-prefix(\"https://search.mdosch.de/\"),\nurl-prefix(\"https://search.mpx.wtf/\"),\nurl-prefix(\"https://search.neet.works/\"),\nurl-prefix(\"https://search.ononoki.org/\"),\nurl-prefix(\"https://search.privacyguides.net/\"),\nurl-prefix(\"https://search.projectsegfau.lt/\"),\nurl-prefix(\"https://search.rabbit-company.com/\"),\nurl-prefix(\"https://search.rhscze.cf/\"),\nurl-prefix(\"https://search.rowie.at/\"),\nurl-prefix(\"https://search.sapti.me/\"),\nurl-prefix(\"https://search.serginho.dev/\"),\nurl-prefix(\"https://search.smnz.de/\"),\nurl-prefix(\"https://search.snopyta.org/\"),\nurl-prefix(\"https://search.stinpriza.org/\"),\nurl-prefix(\"https://search.teamriverbubbles.com/\"),\nurl-prefix(\"https://search.trom.tf/\"),\nurl-prefix(\"https://search.unlocked.link/\"),\nurl-prefix(\"https://search.uspersec.com/\"),\nurl-prefix(\"https://search.vidhukant.xyz/\"),\nurl-prefix(\"https://search.zzls.xyz/\"),\nurl-prefix(\"https://searx.baczek.me/\"),\nurl-prefix(\"https://searx.be/\"),\nurl-prefix(\"https://searx.becomesovran.com/\"),\nurl-prefix(\"https://searx.bissisoft.com/\"),\nurl-prefix(\"https://searx.chocoflan.net/\"),\nurl-prefix(\"https://searx.divided-by-zero.eu/\"),\nurl-prefix(\"https://searx.dresden.network/\"),\nurl-prefix(\"https://searx.ebnar.xyz/\"),\nurl-prefix(\"https://searx.ericaftereric.top/\"),\nurl-prefix(\"https://searx.esmailelbob.xyz/\"),\nurl-prefix(\"https://searx.fi/\"),\nurl-prefix(\"https://searx.fmac.xyz/\"),\nurl-prefix(\"https://searx.fossencdi.org/\"),\nurl-prefix(\"https://searx.gnous.eu/\"),\nurl-prefix(\"https://searx.gnu.style/\"),\nurl-prefix(\"https://searx.kujonello.cf/\"),\nurl-prefix(\"https://searx.mastodontech.de/\"),\nurl-prefix(\"https://searx.mha.fi/\"),\nurl-prefix(\"https://searx.mistli.net/\"),\nurl-prefix(\"https://searx.mxchange.org/\"),\nurl-prefix(\"https://searx.nakhan.net/\"),\nurl-prefix(\"https://searx.namejeff.xyz/\"),\nurl-prefix(\"https://searx.netzspielplatz.de/\"),\nurl-prefix(\"https://searx.nixnet.services/\"),\nurl-prefix(\"https://searx.org/\"),\nurl-prefix(\"https://searx.orion-hub.fr/\"),\nurl-prefix(\"https://searx.priv.pw/\"),\nurl-prefix(\"https://searx.prvcy.eu/\"),\nurl-prefix(\"https://searx.rimkus.it/\"),\nurl-prefix(\"https://searx.roflcopter.fr/\"),\nurl-prefix(\"https://searx.ru/\"),\nurl-prefix(\"https://searx.run/\"),\nurl-prefix(\"https://searx.semipvt.com/\"),\nurl-prefix(\"https://searx.sethforprivacy.com/\"),\nurl-prefix(\"https://searx.sev.monster/\"),\nurl-prefix(\"https://searx.slipfox.xyz/searx/\"),\nurl-prefix(\"https://searx.sp-codes.de/\"),\nurl-prefix(\"https://searx.stuehieyr.com/\"),\nurl-prefix(\"https://searx.tiekoetter.com/\"),\nurl-prefix(\"https://searx.tuxcloud.net/\"),\nurl-prefix(\"https://searx.tyil.nl/\"),\nurl-prefix(\"https://searx.vanwa.tech/\"),\nurl-prefix(\"https://searx.webheberg.info/\"),\nurl-prefix(\"https://searx.xyz/\"),\nurl-prefix(\"https://searx.zapashcanon.fr/\"),\nurl-prefix(\"https://searx.zcyph.cc/\"),\nurl-prefix(\"https://searxng.ir/\"),\nurl-prefix(\"https://searxng.nicfab.eu/\"),\nurl-prefix(\"https://searxng.zackptg5.com/\"),\nurl-prefix(\"https://serx.ml/\"),\nurl-prefix(\"https://sh0.it/\"),\nurl-prefix(\"https://soek.allesbeste.com/\"),\nurl-prefix(\"https://spot.ecloud.global/\"),\nurl-prefix(\"https://srx.cosmohub.io/\"),\nurl-prefix(\"https://suche.dasnetzundich.de/\"),\nurl-prefix(\"https://suche.tromdienste.de/\"),\nurl-prefix(\"https://suche.uferwerk.org/\"),\nurl-prefix(\"https://swag.pw/\"),\nurl-prefix(\"https://sx.catgirl.cloud/\"),\nurl-prefix(\"https://timdor.noip.me/searx/\"),\nurl-prefix(\"https://trydex.tk/searxng/\"),\nurl-prefix(\"https://www.gruble.de/\"),\nurl-prefix(\"https://www.webrats.xyz/\"),\nurl-prefix(\"https://xcxc.ml/\"),\nurl-prefix(\"https://xo.wtf/\"), url-prefix(\"https://searx.be/\") {\n\n  colourscheme(flavour) {\n    if (flavour==\"Latte\") {\n      --ctp-rosewater: #dc8a78;\n      --ctp-flamingo: #dd7878;\n      --ctp-pink: #ea76cb;\n      --ctp-mauve: #8839ef;\n      --ctp-red: #d20f39;\n      --ctp-maroon: #e64553;\n      --ctp-peach: #fe640b;\n      --ctp-yellow: #df8e1d;\n      --ctp-green: #40a02b;\n      --ctp-teal: #179299;\n      --ctp-sky: #04a5e5;\n      --ctp-sapphire: #209fb5;\n      --ctp-blue: #1e66f5;\n      --ctp-lavender: #7287fd;\n      --ctp-text: #4c4f69;\n      --ctp-subtext1: #5c5f77;\n      --ctp-subtext0: #6c6f85;\n      --ctp-overlay2: #7c7f93;\n      --ctp-overlay1: #8c8fa1;\n      --ctp-overlay0: #9ca0b0;\n      --ctp-surface2: #acb0be;\n      --ctp-surface1: #bcc0cc;\n      --ctp-surface0: #ccd0da;\n      --ctp-base: #eff1f5;\n      --ctp-mantle: #e6e9ef;\n      --ctp-crust: #dce0e8;\n    }\n\n    if (flavour==\"Frappe\") {\n      --ctp-rosewater: #f2d5cf;\n      --ctp-flamingo: #eebebe;\n      --ctp-pink: #f4b8e4;\n      --ctp-mauve: #ca9ee6;\n      --ctp-red: #e78284;\n      --ctp-maroon: #ea999c;\n      --ctp-peach: #ef9f76;\n      --ctp-yellow: #e5c890;\n      --ctp-green: #a6d189;\n      --ctp-teal: #81c8be;\n      --ctp-sky: #99d1db;\n      --ctp-sapphire: #85c1dc;\n      --ctp-blue: #8caaee;\n      --ctp-lavender: #babbf1;\n      --ctp-text: #c6d0f5;\n      --ctp-subtext1: #b5bfe2;\n      --ctp-subtext0: #a5adce;\n      --ctp-overlay2: #949cbb;\n      --ctp-overlay1: #838ba7;\n      --ctp-overlay0: #737994;\n      --ctp-surface2: #626880;\n      --ctp-surface1: #51576d;\n      --ctp-surface0: #414559;\n      --ctp-base: #303446;\n      --ctp-mantle: #292c3c;\n      --ctp-crust: #232634;\n    }\n\n    if (flavour==\"Macchiato\") {\n      --ctp-rosewater: #f4dbd6;\n      --ctp-flamingo: #f0c6c6;\n      --ctp-pink: #f5bde6;\n      --ctp-mauve: #c6a0f6;\n      --ctp-red: #ed8796;\n      --ctp-maroon: #ee99a0;\n      --ctp-peach: #f5a97f;\n      --ctp-yellow: #eed49f;\n      --ctp-green: #a6da95;\n      --ctp-teal: #8bd5ca;\n      --ctp-sky: #91d7e3;\n      --ctp-sapphire: #7dc4e4;\n      --ctp-blue: #8aadf4;\n      --ctp-lavender: #b7bdf8;\n      --ctp-text: #cad3f5;\n      --ctp-subtext1: #b8c0e0;\n      --ctp-subtext0: #a5adcb;\n      --ctp-overlay2: #939ab7;\n      --ctp-overlay1: #8087a2;\n      --ctp-overlay0: #6e738d;\n      --ctp-surface2: #5b6078;\n      --ctp-surface1: #494d64;\n      --ctp-surface0: #363a4f;\n      --ctp-base: #24273a;\n      --ctp-mantle: #1e2030;\n      --ctp-crust: #181926;\n    }\n\n    if (flavour==\"Mocha\") {\n      --ctp-rosewater: #f5e0dc;\n      --ctp-flamingo: #f2cdcd;\n      --ctp-pink: #f5c2e7;\n      --ctp-mauve: #cba6f7;\n      --ctp-red: #f38ba8;\n      --ctp-maroon: #eba0ac;\n      --ctp-peach: #fab387;\n      --ctp-yellow: #f9e2af;\n      --ctp-green: #a6e3a1;\n      --ctp-teal: #94e2d5;\n      --ctp-sky: #89dceb;\n      --ctp-sapphire: #74c7ec;\n      --ctp-lavender: #b4befe;\n      --ctp-blue: #89b4fa;\n      --ctp-text: #cdd6f4;\n      --ctp-subtext1: #bac2de;\n      --ctp-subtext0: #a6adc8;\n      --ctp-overlay2: #9399b2;\n      --ctp-overlay1: #7f849c;\n      --ctp-overlay0: #6c7086;\n      --ctp-surface2: #585b70;\n      --ctp-surface1: #45475a;\n      --ctp-surface0: #313244;\n      --ctp-base: #1e1e2e;\n      --ctp-mantle: #181825;\n      --ctp-crust: #11111b;\n    }\n\n  }\n\n  .theme-light {\n    if (lighttheme==\"Latte\")     { colourscheme(Latte) }\n    if (lighttheme==\"Frappe\")    { colourscheme(Frappe) }\n    if (lighttheme==\"Macchiato\") { colourscheme(Macchiato) }\n    if (lighttheme==\"Mocha\")     { colourscheme(Mocha) }\n  }\n  .theme-dark {\n    if (darktheme==\"Latte\")     { colourscheme(Latte) }\n    if (darktheme==\"Frappe\")    { colourscheme(Frappe) }\n    if (darktheme==\"Macchiato\") { colourscheme(Macchiato) }\n    if (darktheme==\"Mocha\")     { colourscheme(Mocha) }\n  }\n\n    :root.theme-dark, :root.theme-light {\n        --color-base-font: var(--ctp-text);\n        --color-base-background: var(--ctp-base);\n        --color-base-background-mobile: var(--ctp-base);\n        --color-url-font: var(--ctp-lavender);\n        --color-url-visited-font: var(--ctp-mauve);\n        --color-header-background: var(--ctp-mantle);\n        --color-header-border: var(--ctp-mantle);\n        --color-footer-background: var(--ctp-mantle);\n        --color-footer-border: var(--ctp-mantle);\n        --color-sidebar-border: var(--ctp-base);\n        --color-sidebar-font: var(--ctp-text);\n        --color-sidebar-background: var(--ctp-base);\n        --color-backtotop-font: var(--ctp-subtext1);\n        --color-backtotop-border: var(--ctp-surface0);\n        --color-backtotop-background: var(--ctp-surface0);\n        --color-btn-background: var(--ctp-lavender);\n        --color-btn-font: var(--ctp-base);\n        --color-show-btn-background: var(--ctp-lavender);\n        --color-show-btn-font: var(--ctp-base);\n        --color-search-border: var(--ctp-surface0);\n        --color-search-shadow: 0 2px 8px var(--ctp-crust);\n        --color-search-background: var(--ctp-surface0);\n        --color-search-font: var(--ctp-text);\n        --color-search-background-hover: var(--ctp-lavender);\n        --color-error: $red;\n        --color-error-background: var(--ctp-surface0);\n        --color-warning: $yellow;\n        --color-warning-background: var(--ctp-surface0);\n        --color-success: $green;\n        --color-success-background: var(--ctp-surface0);\n        --color-categories-item-selected-font: var(--ctp-text);\n        --color-categories-item-border-selected: var(--ctp-mauve);\n        --color-autocomplete-font: var(--ctp-subtext1);\n        --color-autocomplete-border: var(--ctp-surface0);\n        --color-autocomplete-shadow: 0 2px 8px var(--ctp-crust);\n        --color-autocomplete-background: var(--ctp-surface0);\n        --color-autocomplete-background-hover: var(--ctp-surface1);\n        --color-answer-font: var(--ctp-text);\n        --color-answer-background: var(--ctp-mantle);\n        --color-result-background: var(--ctp-mantle);\n        --color-result-border: var(--ctp-base);\n        --color-result-url-font: var(--ctp-subtext1);\n        --color-result-vim-selected: var(--ctp-surface0);\n        --color-result-vim-arrow: var(--ctp-lavender);\n        --color-result-description-highlight-font: var(--ctp-text);\n        --color-result-link-font: var(--ctp-lavender);\n        --color-result-link-font-highlight: var(--ctp-lavender);\n        --color-result-link-visited-font: var(--ctp-mauve);\n        --color-result-publishdate-font: var(--ctp-surface2);\n        --color-result-engines-font: var(--ctp-surface2);\n        --color-result-search-url-border: var(--ctp-surface2);\n        --color-result-search-url-font: var(--ctp-text);\n        --color-result-detail-font: var(--ctp-text);\n        --color-result-detail-label-font: var(--ctp-surface1);\n        --color-result-detail-background: var(--ctp-base);\n        --color-result-detail-hr: var(--ctp-base);\n        --color-result-detail-link: var(--ctp-lavender);\n        --color-result-detail-loader-border: rgba(255, 255, 255, 0.2);\n        --color-result-detail-loader-borderleft: var(--ctp-crust);\n        --color-result-image-span-font: var(--ctp-text);\n        --color-result-image-span-font-selected: var(--ctp-base);\n        --color-result-image-background: var(--ctp-mantle);\n        --color-settings-tr-hover: var(--ctp-surface0);\n        --color-settings-engine-description-font: var(--ctp-text);\n        --color-settings-engine-group-background: var(--ctp-surface0);\n        --color-toolkit-badge-font: var(--ctp-text);\n        --color-toolkit-badge-background: var(--ctp-surface0);\n        --color-toolkit-kbd-font: var(--ctp-text);\n        --color-toolkit-kbd-background: var(--ctp-mantle);\n        --color-toolkit-dialog-border: var(--ctp-mantle);\n        --color-toolkit-dialog-background: var(--ctp-mantle);\n        --color-toolkit-tabs-label-border: var(--ctp-base);\n        --color-toolkit-tabs-section-border: var(--ctp-base);\n        --color-toolkit-select-background: var(--ctp-surface0);\n        --color-toolkit-select-border: var(--ctp-surface0);\n        --color-toolkit-select-background-hover: var(--ctp-surface1);\n        --color-toolkit-input-text-font: var(--ctp-text);\n        --color-toolkit-checkbox-onoff-off-background: var(--ctp-surface0);\n        --color-toolkit-checkbox-onoff-on-background: var(--ctp-surface0);\n        --color-toolkit-checkbox-onoff-on-mark-background: var(--ctp-green);\n        --color-toolkit-checkbox-onoff-on-mark-color: var(--ctp-mantle);\n        --color-toolkit-checkbox-onoff-off-mark-background: var(--ctp-red);\n        --color-toolkit-checkbox-onoff-off-mark-color: var(--ctp-mantle);\n        --color-toolkit-checkbox-label-background: var(--ctp-base);\n        --color-toolkit-checkbox-label-border: var(--ctp-mantle);\n        --color-toolkit-checkbox-input-border: var(--ctp-blue);\n        --color-toolkit-engine-tooltip-border: var(--ctp-surface0);\n        --color-toolkit-engine-tooltip-background: var(--ctp-surface0);\n        --color-toolkit-loader-border: rgba(255, 255, 255, 0.2);\n        --color-toolkit-loader-borderleft: var(--ctp-crust);\n        --color-doc-code: var(--ctp-rosewater);\n        --color-doc-code-background: var(--ctp-mantle);\n    }\n    if (additions) {\n      article.result {\n          background-color: var(--color-result-background);\n          border-radius: .75em;\n          padding: .75em;\n          margin: .5em;\n      }\n      article.category-images {\n          padding-bottom: 4em;\n      }\n    }\n}\n",
+    "usercssData": {
+      "name": "SearXNG Catppuccin",
+      "namespace": "github.com/catppuccin/searxng",
+      "homepageURL": "https://github.com/catppuccin/searxng",
+      "version": "0.2.0",
+      "description": "Soothing pastel theme for SearXNG",
+      "author": "Catppuccin",
+      "updateURL": "https://github.com/catppuccin/searxng/raw/main/catppuccin.user.css",
+      "preprocessor": "stylus",
+      "vars": {
+        "lighttheme": {
+          "type": "select",
+          "label": "Light Variant",
+          "name": "lighttheme",
+          "value": "Latte",
+          "default": "Latte",
+          "options": [
+            {
+              "name": "Latte",
+              "label": "Latte",
+              "value": "Latte"
+            },
+            {
+              "name": "Frappe",
+              "label": "Frappe",
+              "value": "Frappe"
+            },
+            {
+              "name": "Macchiato",
+              "label": "Macchiato",
+              "value": "Macchiato"
+            },
+            {
+              "name": "Mocha",
+              "label": "Mocha",
+              "value": "Mocha"
+            }
+          ]
+        },
+        "darktheme": {
+          "type": "select",
+          "label": "Dark Variant",
+          "name": "darktheme",
+          "value": "Macchiato",
+          "default": "Mocha",
+          "options": [
+            {
+              "name": "Latte",
+              "label": "Latte",
+              "value": "Latte"
+            },
+            {
+              "name": "Frappe",
+              "label": "Frappe",
+              "value": "Frappe"
+            },
+            {
+              "name": "Macchiato",
+              "label": "Macchiato",
+              "value": "Macchiato"
+            },
+            {
+              "name": "Mocha",
+              "label": "Mocha",
+              "value": "Mocha"
+            }
+          ]
+        },
+        "additions": {
+          "type": "checkbox",
+          "label": "Additional Tweaks",
+          "name": "additions",
+          "value": "0",
+          "default": "0",
+          "options": null
+        }
+      }
+    },
+    "author": "Catppuccin",
+    "description": "Soothing pastel theme for SearXNG",
+    "name": "SearXNG Catppuccin",
+    "preferScheme": "none",
+    "originalDigest": "8bd60edaf4ccce6dddace08b6156afd44526e419",
+    "_id": "6bfd6527-1d9a-4fc8-aec2-21ebb58f8bec",
+    "_rev": 1673692847614,
+    "id": 26,
+    "updateDate": 1673539688395,
+    "etag": "W/\"d74e167ddecd2d11bed19f0b68c193b4e5a8cb0386f219b76889ab01dfa926a7\""
   }
 ]
