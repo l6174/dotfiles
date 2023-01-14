@@ -152,8 +152,3 @@
    */ --uc-identity-glow: 0 1px 10px 1px;
 
 }
-
-
-/* Hide the secondary Tab Label
- * e.g. playing indicator (the text, not the icon) */
-.tab-secondary-label { display: none !important; }
