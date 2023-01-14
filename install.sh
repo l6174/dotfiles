@@ -61,7 +61,7 @@ paru -S --noconfirm --needed picom-jonaburg-git\
 	zoxide            \
 	exa               \
 	zathura           \
-	chromium          \
+	firefox          \
 	papirus-icon-theme\
 	kitty             \
 	nitrogen          \
