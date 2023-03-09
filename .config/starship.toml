@@ -36,6 +36,9 @@ truncate_to_repo=false
 home_symbol = " ~"
 read_only = " "
 
+[battery]
+disabled = true
+
 [git_branch]
 format = "[](fg:#494d64 bg:none)[$branch]($style)[](fg:#494d64 bg:#494d64)[](fg:#8aadf4 bg:#494d64)[](fg:#363a4f bg:#8aadf4)[](fg:#8aadf4 bg:none) "
 style = "fg:#91d7e3 bg:#494d64"
