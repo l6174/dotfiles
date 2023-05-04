@@ -63,7 +63,7 @@ myModMask       = mod4Mask
 --
 -- > workspaces = ["web", "irc", "code" ] ++ map show [4..9]
 --
-myWorkspaces    = ["\63083", "\63206", "\63306", "ﮭ", "\63589", "\63256", "\64271", "\61485", "阮"]
+myWorkspaces    = ["\63083", "\63206", "\63306", "\61459", "\63589", "\63256", "\61684", "\61485", "\61441"]
 
 -- Border colors for unfocused and focused windows, respectively.
 --
@@ -166,8 +166,8 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm .|. controlMask, xK_i), sendMessage $ IncGap 10 R)              -- increment the right-hand gap
     , ((modm .|. shiftMask, xK_i     ), sendMessage $ DecGap 10 R)           -- decrement the right-hand gap
      -- Touchpad enable and disable
-    , ((modm .|. shiftMask, xK_s), spawn "xinput enable 11")
-    , ((modm .|. shiftMask, xK_z), spawn "xinput disable 11")
+    , ((modm .|. shiftMask, xK_s), spawn "xinput enable $(xinput list --id-only 'SynPS/2 Synaptics TouchPad')")
+    , ((modm .|. shiftMask, xK_z), spawn "xinput disable $(xinput list --id-only 'SynPS/2 Synaptics TouchPad')")
 
      -- Rotate through the available layout algorithms
     , ((modm,               xK_space ), sendMessage NextLayout)
@@ -357,10 +357,11 @@ myStartupHook = do
   spawnOnce "greenclip daemon"
   spawnOnce "dunst"
 -- spawnOnce "sh ~/.config/eww/scripts/getweather"
-  spawnOnce "xinput disable 11"
+  spawnOnce "xinput disable $(xinput list --id-only 'SynPS/2 Synaptics TouchPad')"
   spawnOnce "syncthing --no-browser"
   spawnOnce "playerctld daemon"
   spawnOnce "lxpolkit &"
+  spawnOnce "xdman &"
 ------------------------------------------------------------------------
 -- Now run xmonad with all the defaults we set up.
 
