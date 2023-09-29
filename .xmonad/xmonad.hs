@@ -63,7 +63,7 @@ myModMask       = mod4Mask
 --
 -- > workspaces = ["web", "irc", "code" ] ++ map show [4..9]
 --
-myWorkspaces    = ["\63083", "\63206", "\63306", "\61459", "\63589", "\63256", "\61684", "\61485", "\61441"]
+myWorkspaces    = ["\63083", "\63206", "\63306", "\61459", "\59036", "\63256", "\61684", "\61485", "\61441"]
 
 -- Border colors for unfocused and focused windows, respectively.
 --
@@ -362,6 +362,7 @@ myStartupHook = do
   spawnOnce "playerctld daemon"
   spawnOnce "lxpolkit &"
   spawnOnce "xdman &"
+  spawnOnce "redshift &"
 ------------------------------------------------------------------------
 -- Now run xmonad with all the defaults we set up.
 

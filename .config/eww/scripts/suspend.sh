@@ -1,5 +1,5 @@
 # Confirmation
-dir="~/.config/rofi/powermenu"
+dir="~/.config/rofi/config"
 confirm_exit() {
 	rofi -dmenu\
 		-i\
