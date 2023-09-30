@@ -145,7 +145,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     --, ((modm .|. shiftMask, xK_z     ), spawn "exec ~/bin/inhibit_deactivate")
     , ((modm .|. shiftMask, xK_a     ), clipboardy)
     -- Turn do not disturb on and off
-    , ((modm,               xK_d     ), spawn "exec ~/bin/do_not_disturb.sh")
+    , ((modm,               xK_d     ), spawn "exec ~/.config/rofi/bin/runner")
 
     -- close focused window
     , ((modm .|. shiftMask, xK_c     ), kill)
@@ -200,8 +200,8 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm .|. shiftMask, xK_k     ), windows W.swapUp    )
 
     -- Show emoji menu
-    , ((modm,               xK_slash    ), spawn "rofi -show emoji -modi emoji -theme ~/.config/rofi/config/launcher.rasi")
-
+    , ((modm, xK_slash    ), spawn "rofi -show emoji -scroll-method 0 -terminal kitty -theme ~/.config/rofi/config/emoji.rasi")
+    
     -- Shrink the master area
     , ((modm,               xK_h     ), sendMessage Shrink)
 
