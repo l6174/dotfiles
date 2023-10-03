@@ -7,7 +7,8 @@ set -x EDITOR nano
 if status is-interactive
     # Commands to run in interactive sessions can go here
     # neofetch --ascii radioactive.txt --ascii_colors 2 1
-    fetchit -f .l/laptop.txt -o yellow -t red -b blue
+    # fetchit -f .l/laptop.txt -o yellow -t red -b blue
+    nitch
 end
 if status --is-login
     startx    

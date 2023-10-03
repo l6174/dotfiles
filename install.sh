@@ -61,11 +61,11 @@ paru -S --noconfirm --needed picom-jonaburg-git\
 	zoxide            \
 	exa               \
 	zathura           \
-	firefox          \
+	firefox           \
 	papirus-icon-theme\
 	kitty             \
 	nitrogen          \
-	fetchit-git       \
+	nitch             \
 	bat               \
 	rofi              \
 	feh               \
