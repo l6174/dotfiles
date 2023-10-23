@@ -16,9 +16,8 @@
 
     printf "%s" "$SEP1"
 	if [ "$CONNAME" != "" ]; then    
-            printf " %s" # %s" "$CONNAME" ########"$PRIVATE" "$PUBLIC"🌐
+            printf "󰤨 %s" # %s" "$CONNAME" ########"$PRIVATE" "$PUBLIC"🌐
         else
-	    printf " %s"
+	    printf "󰤩 %s"
 	fi 
     printf "%s" #"$SEP2"
-

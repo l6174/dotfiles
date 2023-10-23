@@ -301,8 +301,8 @@
 [urgency_critical]
     background = "#24273A"
     foreground = "#CAD3F5"
-    frame_color = "#F5A97F"
-    highlight = "#ED8796"
+    frame_color = "#ED8796"
+    highlight = "#A6DA95"
     timeout = 0
     # Icon for notifications with critical urgency, uncomment to enable
     icon = ~/.local/share/icons/mdi/notification.png
