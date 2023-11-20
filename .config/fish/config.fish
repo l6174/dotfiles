@@ -2,7 +2,7 @@ fish_add_path --path $HOME/.local/bin
 fish_add_path --path $HOME/bin
 starship init fish | source
 zoxide init --cmd cd fish | source
-set -x BAT_THEME Catppuccin-macchiato
+set -x BAT_THEME Catppuccin-mocha
 set -x EDITOR nano
 if status is-interactive
     # Commands to run in interactive sessions can go here

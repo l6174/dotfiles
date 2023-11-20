@@ -67,8 +67,8 @@ myWorkspaces    = ["\63083", "\63206", "\63306", "\61459", "\59036", "\63256", "
 
 -- Border colors for unfocused and focused windows, respectively.
 --
-myNormalBorderColor  = "#8aadf4"
-myFocusedBorderColor = "#a6da95"
+myNormalBorderColor  = "#89b4fa"
+myFocusedBorderColor = "#f38ba8"
 
 addNETSupported :: Atom -> X ()
 addNETSupported x   = withDisplay $ \dpy -> do

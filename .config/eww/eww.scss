@@ -3,14 +3,14 @@
 }
 
 window {
-  background-color: #24273a;
-	color: #D8DEE9;
+  background-color: #1e1e2e;
+	color: #cdd6f4;
   font-family: Quicksand;
 }
 
 button {
   all: unset;
-  background-color: #24273a;
+  background-color: #1e1e2e;
   padding: 10px;
 }
 
@@ -38,7 +38,7 @@ button {
 }
 
 .musicbtn button:hover {
-  color: #ed8796;
+  color: #f38ba8;
 }
 
 .music-slider scale trough {
@@ -52,20 +52,20 @@ button {
 
 .music-slider scale trough highlight {
 	all: unset;
-	background-color: #D8DEE9;
+	background-color: #cdd6f4;
 	color: #000000;
 	border-radius: 10px;
 }
 
 .music-slider slider {
   all: unset;
-  color: #D8DEE9;
+  color: #cdd6f4;
 }
 
 .number_day {
   padding-top: 10px;
   font-size: 35px;
-  color: #ed8796;
+  color: #f38ba8;
 }
 
 .month {
@@ -82,7 +82,7 @@ button {
   padding-top: 10px;
   padding-bottom: 5px;
   font-weight: bold;
-  color: #ed8796;
+  color: #f38ba8;
 }
 
 .temperature-side {
@@ -117,13 +117,13 @@ button {
 }
 
 .musicbtn-side button:hover {
-  color: #ed8796;
+  color: #f38ba8;
 }
 .pause-play-side {
-  color: #ed8796;
+  color: #f38ba8;
 }
 .pause-play-side:hover {
-  color: #D8DEE9;
+  color: #cdd6f4;
 }
 
 .time-side {
@@ -131,42 +131,42 @@ button {
   font-size: 60px;
 }
 .minute-side {
-  color: #ed8796;
+  color: #f38ba8;
 }
 .day-side {
   font-size: 16px;
   font-weight: bold;
-  color: #a6da95;
+  color: #a6e3a1;
 }
 
 .sliders-side slider {
   all: unset;
-  color: #D8DEE9;
+  color: #cdd6f4;
 }
 .slider-vol-side {
   margin-top: 10px;
 }
 .slider-vol-side scale trough highlight {
 	all: unset;
-	background-color: #c6a0f6;
+	background-color: #89b4fa;
 	color: #000000;
 	border-radius: 10px;
 }
 .slider-bright-side scale trough highlight {
   all: unset;
-	background-color: #8aadf4;
+	background-color: #89dceb;
 	color: #000000;
 	border-radius: 10px;
 }
 .slider-ram-side scale trough highlight {
   all: unset;
-	background-color: #ed8796;;
+	background-color: #f38ba8;;
 	color: #000000;
 	border-radius: 10px;
 }
 .slider-battery-side scale trough highlight {
   all: unset;
-	background-color: #a6da95;
+	background-color: #a6e3a1;
 	color: #000000;
 	border-radius: 10px;
 }
@@ -214,51 +214,51 @@ button {
   font-size: 25px;
 }
 .label-bright-side {
-  color: #8aadf4;
+  color: #89dceb;
 }
 .label-ram-side {
   font-size: 30px;
-  color: #ed8796;
+  color: #f38ba8;
 }
 .label-battery-side {
   font-size: 18px;
-  color: #a6da95;
+  color: #a6e3a1;
 }
 .label-vol-side {
-  color: #c6a0f6;
+  color: #89b4fa;
 }
 
 .search-side {
   border-radius: 12px;
-  background-color: #3B4252;
+  background-color: #313244;
   margin: 20px 30px 20px 30px;
 }
 .search-side:hover {
-  color: #ed8796;
+  color: #f38ba8;
 }
 .sysbtn button {
   font-size: 30px;
 }
 .shutdown-side ~ button:hover {
-  color: #ed8796;
+  color: #f38ba8;
 }
 .shutdown-side{
-  color: #ed8796;
+  color: #f38ba8;
 }
 .shutdown-side:hover{
-  color: #D8DEE9;
+  color: #cdd6f4;
 }
 .reboot-side{
-  color: #8aadf4;
+  color: #89dceb;
 }
 .lock-side{
-  color: #D8DEE9;
+  color: #cdd6f4;
 }
 .suspend-side{
-  color: #c6a0f6;
+  color: #89b4fa;
 }
 .logout-side{
-  color: #a6da95;
+  color: #a6e3a1;
 }
 .calendar_title {
   margin: 20px 20px 0px 20px;
@@ -270,42 +270,42 @@ button {
   margin-right: 20px;
 }
 .search-full:hover {
-  color: #ed8796;
+  color: #f38ba8;
 }
 .power-full {
   font-size: 45px;
-  color: #ed8796;
+  color: #f38ba8;
 }
 .power-full:hover {
-  color: #D8DEE9;
+  color: #cdd6f4;
 }
 .reboot-full {
   font-size: 45px;
-  color: #8aadf4
+  color: #89dceb
 }
 .reboot-full:hover {
-  color: #ed8796
+  color: #f38ba8
 }
 .lock-full {
   font-size: 45px;
-  color: #D8DEE9
+  color: #cdd6f4
 }
 .lock-full:hover {
-  color: #ed8796
+  color: #f38ba8
 }
 .suspend-full {
   font-size: 45px;
-  color: #c6a0f6
+  color: #89b4fa
 }
 .suspend-full:hover {
-  color: #ed8796
+  color: #f38ba8
 }
 .logout-full {
   font-size: 45px;
-  color: #a6da95
+  color: #a6e3a1
 }
 .logout-full:hover {
-  color: #ed8796
+  color: #f38ba8
 }
 
 .pfp {
@@ -320,7 +320,7 @@ button {
 }
 .pfptxt {
   margin-top: 30px;
-  color: #ed8796;
+  color: #f38ba8;
   font-size: 32px;
 }
 .subpfptxt {
@@ -338,7 +338,7 @@ button {
   padding-top: 20px;
   padding-bottom: 5px;
   font-weight: bold;
-  color: #ed8796;
+  color: #f38ba8;
 }
 
 .temperature {
@@ -361,19 +361,19 @@ button {
   margin: 10px;
 }
 .l1:hover, .l3:hover, .l4:hover, .l6:hover {
-  color: #ed8796;
+  color: #f38ba8;
 }
 .l1, .l6 {
- color: #8aadf4;
+ color: #89dceb;
 }
 .l2, .l5 {
- color: #D8DEE9;
+ color: #cdd6f4;
 }
 .l3, .l4 {
- color: #c6a0f6;
+ color: #89b4fa;
 }
 .l5:hover, .l2:hover {
-  color: #ed8796;
+  color: #f38ba8;
 }
 
 .quote-main {
@@ -381,30 +381,30 @@ button {
   font-weight: bold;
   margin-top: 20px;
   margin-left: 20px;
-  color: #88C0D0;
+  color: #9399b2;
 }
 .quote-author {
   font-size: 14px;
   margin-right: 30px;
   margin-bottom: 10px;
-  color: #8aadf4;
+  color: #89dceb;
 }
 .quote-tail {
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 10px;
   margin-left: 20px;
-  color: #88C0D0;
+  color: #9399b2;
 }
 
 .screenshot-icon {
-  color: #D8DEE9;
+  color: #cdd6f4;
   font-size: 45px;
   margin-right: 10px;
   font-family: Iosevka;
 }
 .screenshot-icon:hover {
-  color: #ed8796;
+  color: #f38ba8;
 }
 
 .vpn-icon {
@@ -412,11 +412,11 @@ button {
   margin-right: 5px;
 }
 .vpn-icon:hover {
- color: #D8DEE9;
+ color: #cdd6f4;
 }
 .disturb-icon {
   font-size: 45px;
 }
 .disturb-icon:hover {
- color: #D8DEE9;
+ color: #cdd6f4;
 }

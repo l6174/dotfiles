@@ -12,7 +12,7 @@ add_newline = false
 disabled = true
 
 [character]
-format = "[](fg:#8aadf4 bg:none)[ $symbol ](fg:#494d64 bg:#8aadf4)[](fg:#8aadf4 bg:#494d64)"
+format = "[](fg:#89b4fa bg:none)[ $symbol ](fg:#45475a bg:#89b4fa)[](fg:#89b4fa bg:#45475a)"
 success_symbol = ""
 error_symbol = ""
 vicmd_symbol = " "
@@ -24,13 +24,13 @@ disabled = false
 
 [cmd_duration]
 min_time = 1
-format = "[](fg:#494d64 bg:none)[$duration]($style)[](fg:#494d64 bg:#494d64)[](fg:#8aadf4 bg:#494d64)[ ](fg:#494d64 bg:#8aadf4)[](fg:#8aadf4 bg:none) "
+format = "[](fg:#45475a bg:none)[$duration]($style)[](fg:#45475a bg:#45475a)[](fg:#89b4fa bg:#45475a)[ ](fg:#45475a bg:#89b4fa)[](fg:#89b4fa bg:none) "
 disabled = false
-style = "fg:#91d7e3 bg:#494d64"
+style = "fg:#89dceb bg:#45475a"
 
 [directory]
-format = "[](fg:#494d64 bg:#494d64)[$path ](fg:#8aadf4 bg:#494d64)[](fg:#494d64 bg:none) "
-style = "fg:#494d64 bg:#8aadf4"
+format = "[](fg:#45475a bg:#45475a)[$path ](fg:#89b4fa bg:#45475a)[](fg:#45475a bg:none) "
+style = "fg:#45475a bg:#89b4fa"
 truncation_length = 3
 truncate_to_repo=false
 home_symbol = " ~"
@@ -40,13 +40,13 @@ read_only = " "
 disabled = true
 
 [git_branch]
-format = "[](fg:#494d64 bg:none)[$branch]($style)[](fg:#494d64 bg:#494d64)[](fg:#8aadf4 bg:#494d64)[](fg:#363a4f bg:#8aadf4)[](fg:#8aadf4 bg:none) "
-style = "fg:#91d7e3 bg:#494d64"
+format = "[](fg:#45475a bg:none)[$branch]($style)[](fg:#45475a bg:#45475a)[](fg:#89b4fa bg:#45475a)[](fg:#313244 bg:#89b4fa)[](fg:#89b4fa bg:none) "
+style = "fg:#89dceb bg:#45475a"
 symbol = " "
 
 [git_status]
-format="[](fg:#494d64 bg:none)[$all_status$ahead_behind]($style)[](fg:#494d64 bg:#494d64)[](fg:#8aadf4 bg:#494d64)[ ](fg:#494d64 bg:#8aadf4)[](fg:#8aadf4 bg:none) "
-style = "fg:#91d7e3 bg:#494d64"
+format="[](fg:#45475a bg:none)[$all_status$ahead_behind]($style)[](fg:#45475a bg:#45475a)[](fg:#89b4fa bg:#45475a)[ ](fg:#45475a bg:#89b4fa)[](fg:#89b4fa bg:none) "
+style = "fg:#89dceb bg:#45475a"
 conflicted = "="
 ahead =	"⇡${count}"
 behind = "⇣${count}"
