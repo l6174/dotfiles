@@ -361,8 +361,9 @@ myStartupHook = do
   spawnOnce "syncthing --no-browser"
   spawnOnce "playerctld daemon"
   spawnOnce "lxpolkit &"
-  spawnOnce "xdman &"
   spawnOnce "redshift &"
+  spawnOnce "jamesdsp &"
+  spawnOnce "pactl info"
 ------------------------------------------------------------------------
 -- Now run xmonad with all the defaults we set up.
 
