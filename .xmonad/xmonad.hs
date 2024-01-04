@@ -362,7 +362,7 @@ myStartupHook = do
   spawnOnce "playerctld daemon"
   spawnOnce "lxpolkit &"
   spawnOnce "redshift &"
-  spawnOnce "jamesdsp &"
+  spawnOnce "jamesdsp -t"
   spawnOnce "pactl info"
 ------------------------------------------------------------------------
 -- Now run xmonad with all the defaults we set up.

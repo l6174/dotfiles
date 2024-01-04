@@ -3,7 +3,7 @@
 
 include "/home/llawliet/.gtkrc-2.0.mine"
 gtk-theme-name="Catppuccin-Mocha-Standard-Red-Dark"
-gtk-icon-theme-name="Papirus-Catppuccin-Mocha"
+gtk-icon-theme-name="Papirus-Catppuccin"
 gtk-font-name="Varela Round 11.5"
 gtk-cursor-theme-name="Bibata-Catppuccin-Mocha"
 gtk-cursor-theme-size=0
