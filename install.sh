@@ -136,13 +136,6 @@ echo "Done!"
 sleep 3
 
 
-# Copy TTY Directory
-echo "Copying TTY Theme..."
-cp -r ~/dotfiles/TTY ~
-echo "Done!"
-sleep 3
-
-
 # Copy Wallpapers Directory
 echo "Copying Wallpapers..."
 cp -r ~/dotfiles/Wallpapers ~
