@@ -180,7 +180,7 @@
 
     ;; Battery charge vars
     (defpoll battery-remaining :interval "5s"  "cat /sys/class/power_supply/BAT1/capacity")
-    (defpoll bat-icon :interval "5s"  "~/.config/tint2/scripts/battery.sh")
+    (defpoll bat-icon :interval "5s"  "~/.config/tint2/scripts/battery_eww.sh")
 
     ;; Home-dir stuff
     (defpoll l1-processed :interval "20h"  "~/.config/eww/scripts/home-dir/l1-processed")

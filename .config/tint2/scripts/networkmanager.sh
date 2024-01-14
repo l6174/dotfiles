@@ -5,19 +5,20 @@
 # GNU GPLv3
 
 # Dependencies: NetworkManager, curl
+SIG=$(nmcli -t -f SIGNAL,ACTIVE dev wifi list | grep "yes" | awk '{gsub(/[^0-9]/, "", $1); print int($1)}' | head -n 1)
 
-    CONNAME=$(nmcli -a | grep 'Wired connection' | awk 'NR==1{print $1}')
-    if [ "$CONNAME" = "" ]; then
-        CONNAME=$(nmcli -t -f active,ssid dev wifi | grep '^yes' | cut -c 5-)
-    fi
-
-    PRIVATE=$(nmcli -a | grep 'inet4 192' | awk '{print $2}')
-    PUBLIC=$(curl -s https://ipinfo.io/ip)
-
-    printf "%s" "$SEP1"
-	if [ "$CONNAME" != "" ]; then    
-            printf "󰤨 %s" # %s" "$CONNAME" ########"$PRIVATE" "$PUBLIC"🌐
-        else
-	    printf "󰤩 %s"
-	fi 
-    printf "%s" #"$SEP2"
+printf "%s" "$SEP1"
+if [ "$SIG" == "" ]; then
+    printf "󰤩 " #"$SIG" "+" #🔌
+elif [ "$SIG" -le 20 ]; then
+    printf "󰤯 " #"$SIG"
+elif [ "$SIG" -le 40 ]; then
+    printf "󰤟 " #"$SIG"
+elif [ "$SIG" -le 60 ]; then
+    printf "󰤢 " #"$SIG"
+elif [ "$SIG" -le 80 ]; then
+    printf "󰤥 "
+else
+    printf "󰤨 " #"$SIG" #🔋
+fi
+printf "%s" #"$SEP2"

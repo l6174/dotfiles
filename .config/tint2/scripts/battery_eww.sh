@@ -10,16 +10,16 @@
 
     printf "%s" "$SEP1"
         if [ "$STATUS" = "Charging" ]; then
-            printf "󰂄" #"$CHARGE" "+" #🔌
+            printf " " #"$CHARGE" "+" #🔌
     	elif [ $CHARGE -le 75 ] && [ $CHARGE -gt 50  ]; then
-	    printf "󰂁" #"$CHARGE"
+	    printf " " #"$CHARGE"
 	elif [ $CHARGE -le 50 ] && [ $CHARGE -gt 25  ]; then
-	    printf "󰁿" #"$CHARGE"
+	    printf " " #"$CHARGE"
 	elif [ $CHARGE -le 25 ] && [ $CHARGE -gt 10  ]; then
-	    printf "󰁽" #"$CHARGE"
+	    printf " " #"$CHARGE"
 	elif [ $CHARGE -le 10 ]; then
-	    printf "󰁻"  "!!"
+	    printf " "  "!!"
         else
-            printf "󰁹" #"$CHARGE" #🔋
+            printf " " #"$CHARGE" #🔋
         fi
     printf "%s" #"$SEP2"
