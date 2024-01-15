@@ -1,0 +1,4 @@
+#! /bin/bash
+
+CHARGE=$(cat /sys/class/power_supply/BAT1/capacity)
+dunstify -r 5788 "Battery" "Battery is $(cat /sys/class/power_supply/BAT1/capacity)%" -i ~/.local/share/icons/mdi/battery-full.png

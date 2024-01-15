@@ -1,0 +1,2 @@
+if ((number >= 2 && number <= 5)); then
+  # your code

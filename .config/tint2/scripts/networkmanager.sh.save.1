@@ -1,0 +1,22 @@
+#!/bin/sh
+    SIG=$(nmcli dev wifi list | awk '/\*/{if (NR!=1) {print $8}}')
+    fi
+
+    PRIVATE=$(nmcli -a | grep 'inet4 192' | awk '{print $2}')
+    PUBLIC=$(curl -s https://ipinfo.io/ip)
+
+    printf "%s" "$SEP1"
+        if [ "$SIG" = "" ]; then
+            printf "󰤩 " #"$SIGSTRENGTH" "+" #🔌
+        elif [ "$SIG" -le 20 ]; then
+            printf "󰤯 " #"$SIGSTRENGTH"
+        elif [ "$SIG" -le 40 ] && [ $SIG -gt 20  ]; then
+            printf "󰤟 " #"$SIGSTRENGTH"
+        elif [ "$SIG" -le 60 ] && [ $SIG -gt 40  ]; then
+            printf "󰤢 " #"$SIGSTRENGTH"
+        elif [ "$SIG -le 80 ] && [ $SIG -gt 60 ]; then
+            printf "󰤥 "
+        else
+            printf "󰤨 " #"$SIGSTRENGTH" #🔋
+        fi
+    printf "%s" #"$SEP2"

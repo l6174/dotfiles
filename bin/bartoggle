@@ -8,5 +8,6 @@ else
 	exec ~/bin/tint2 -c ~/.config/tint2/customscripts.tint2rc &
 	exec ~/bin/tint2 -c ~/.config/tint2/icons.tint2rc &
 	exec ~/bin/tint2 -c ~/.config/tint2/workspaces.tint2rc &
+	exec ~/bin/tint2 -c ~/.config/tint2/mediaplayer.tint2rc &
 fi
 exit
